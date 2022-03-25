@@ -12,7 +12,6 @@ import tailwindIcon from '../../images/tailwind-logo.svg'
 import javascriptIcon from '../../images/icons8-javascript.svg'
 import cssIcon from '../../images/icons8-css3.svg'
 import designIcon from '../../images/icons8-web-design-64.png'
-import { Element } from 'react-scroll'
 
 const techItems = [
   {

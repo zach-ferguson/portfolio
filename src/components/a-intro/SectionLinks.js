@@ -1,9 +1,7 @@
-import React, { useRef, useEffect, useState } from 'react'
-import { Box, Button, Typography } from '@mui/material';
-import gsap from 'gsap';
+import React, { useRef, useState } from 'react'
+import { Box, Button } from '@mui/material';
 import Cube from './Cube';
 import useMouseMove from '../../Hooks/useMouseMove';
-import _, {debounce} from 'lodash';
 import { Link } from 'react-scroll'
 
 const buttonSx = {
@@ -16,13 +14,6 @@ const buttonSx = {
   '&:hover':{
     backgroundColor: 'transparent'
   }
-}
-
-const buttonTextSx = {
-  fontWeight: 700,
-  my: '2rem',
-  fontFamily: 'Righteous',
-  fontSize: '32px',
 }
 
 function SectionLinks() {

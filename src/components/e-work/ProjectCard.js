@@ -1,8 +1,7 @@
-import { Button, Card, CardActionArea, Grid, Typography } from '@mui/material'
+import { Card, CardActionArea, Grid, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import parse from 'html-react-parser';
 import React from 'react'
-import openInTabIcon from '../../images/icons8-external-link.svg'
 import githubIcon from '../../images/icons8-github.svg'
 
 const cardStyles = {
@@ -36,10 +35,6 @@ const techIconStyles = {
   marginBottom: 0
 }
 
-const linkStyles = {
-
-}
-
 const overlayStyles = {
   width: '100%',
   height: '100%',
@@ -58,18 +53,6 @@ const overlayStyles = {
     backgroundColor: '#353535',
     opacity: .5,
     textDecoration: 'none',
-  }
-}
-
-const buttonStyles = {
-  display: 'flex',
-  background: '#D9D9D9',
-  opacity: '150%',
-  width: '20%',
-  height: '20%',
-  '&:hover': {
-    backgroundColor: '#D9D9D9',
-    opacity: .75,
   }
 }
 
@@ -97,7 +80,7 @@ function ProjectCard(props) {
   const techStack = props.techStack.map((tech) => {
     return(
       <Box sx={{ display: 'flex', alignItems: 'center', height: 32, mb: '10px'}}>
-        <img src={tech.iconSrc} style={techIconStyles}/>
+        <img src={tech.iconSrc} alt={tech.text + '-icon'} style={techIconStyles}/>
         <Typography sx={{ fontFamily: 'Josefin Slab', fontWeight: 600, width: 'fit-content' }}>
           {tech.text}
         </Typography>
@@ -110,10 +93,10 @@ function ProjectCard(props) {
       <Card sx={ cardStyles }>
         <Grid id='action-area' item container xs={12}>
           <CardActionArea disableRipple sx={ actionAreaStyles }>
-            <a id='overlay' href={props.link} target="_blank" referrer="none" style={ linkStyles }>
+            <a id='overlay' href={props.link} target="_blank" rel='noreferrer'>
               <Box sx={ overlayStyles }/>
             </a>  
-            <img id='site-thumbnail' src={props.imgSrc} style={{ width: '100%', height: '100%'}} />
+            <img id='site-thumbnail' alt='project-thumbnail' src={props.imgSrc} style={{ width: '100%', height: '100%'}} />
           </CardActionArea>
         </Grid>
         <Grid id='card-text' container item spacing={3} direction='row' justifyContent='space-around'  >
@@ -133,7 +116,7 @@ function ProjectCard(props) {
         { props.codeLink && (
         <Grid id='view-code-section' item xs={12} sx={{ mx: '4%', borderTop: '1px solid rgba(0,0,0,0.87)',}}>
           <CardActionArea href={props.codeLink} target="_blank" referrer="none" sx={ codeLinkStyles }>
-            <img src={githubIcon} style={{ width: '32px', height: '32px',}}/>
+            <img src={githubIcon} alt='github-icon' style={{ width: '32px', height: '32px',}}/>
             <Typography sx={{ fontFamily: 'Josefin Slab', fontWeight: 700, }}>
               View Code
             </Typography>

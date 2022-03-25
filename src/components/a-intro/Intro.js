@@ -1,8 +1,6 @@
 import { Grid, Typography } from '@mui/material';
-import { Box } from '@mui/system';
 import React from 'react';
 import SectionLinks from './SectionLinks';
-import BouncingScrollHere from './BouncingScrollHere.js'
 
 const introStyles = {
   maxWidth: 960, 
