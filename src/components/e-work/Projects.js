@@ -122,7 +122,7 @@ import pixelsThumbnail from '../../images/pixel-game-image.webp'
         iconSrc: awsIcon,
       },
     ],
-    codeLink: `https://github.com/zach-ferguson/pixel-game/blob/main/README.md`
+    codeLink: `https://github.com/zach-ferguson/pixel-game/`
   }
 
 const cardData = [
