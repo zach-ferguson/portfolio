@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 
 export default function useMouseMove() {
   const [state, setState] = useState({x: 0, y: 0})

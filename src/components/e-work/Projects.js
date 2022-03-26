@@ -147,7 +147,7 @@ function Projects() {
     <Box id sx={{ display: 'flex', flexDirection: 'column', width: '100%', backgroundColor: '#3C6E71', borderTop: '1px solid #353535', pb: '8rem', borderBottom: '1px solid #353535'}}>
       <Element name="projects"/>
       <Grid id='work-section-grid' container spacing={0} xs={8} md={5} justifyContent='center' direction='column' sx={{ maxWidth: 960, mt: '6rem', margin: 'auto' }}>
-        <Box sx={{mb: '4rem', mt: '10rem', mx: 'auto', border: '1px solid black', background: '#D9D9D9', px: '5px', py: '5px', borderRadius: '12px', width: '250px',   boxShadow: '8px 8px 4px 0px rgba(53,53,53,53.69)'}}>
+        <Box sx={{mb: '4rem', mt: '10rem', mx: 'auto', border: '1px solid black', background: '#D9D9D9', px: '5px', py: '5px', borderRadius: '12px', width: '250px', boxShadow: '8px 8px 4px 0px rgba(53,53,53,53.69)'}}>
           <Typography sx={{ fontFamily: 'Righteous', fontSize: '48px', width: 'fit-content', mx: 'auto',}}>
             My Work
           </Typography>

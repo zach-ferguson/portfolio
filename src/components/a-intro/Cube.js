@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react';
-import gsap, { CustomEase } from 'gsap/all';
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap/all';
 
 const cubeStyle = { 
   position: 'relative',

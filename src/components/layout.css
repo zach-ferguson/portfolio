@@ -673,10 +673,6 @@ pre tt:after {
   animation-delay: 3.2s;
 }
 
-.funkyBorder:{
-  border: 1px solid black;
-}
-
 @keyframes draw {
   from {
     stroke-dashoffset: 822;
