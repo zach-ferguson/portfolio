@@ -35,7 +35,7 @@ function SocialButtons() {
           </a>
         </Box>
         <Box className='iconBox'>
-          <a target='_blank' rel="noreferrer" href={'https://www.instagram.com/carswellmusic/'}>
+          <a target='_blank' rel="noreferrer" href="mailto:z.h.ferguson@gmail.com">
             <IconButton sx={ iconButtonStyle }>
             <img style={{ width: '100%', height: '100%', margin: 'auto' }} alt='email-icon' src={emailIcon}/>
             </IconButton>
