@@ -10,8 +10,10 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "@fontsource/righteous"
 import "@fontsource/josefin-slab"
+import "@fontsource/open-sans"
 import Header from "./a-intro/header"
 import "./layout.css"
+import { Box } from "@mui/material"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,20 +27,20 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <Box sx={{ width: '100%', overflow: 'hidden' }}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
           margin: `0 auto`,
           width: '100%',
           maxWidth: '100vw',
-          fontFamily: 'Josefin Slab',
-          fontStyle: 'Josefin Slab'
+          fontFamily: 'Open Sans',
+          fontStyle: 'Open Sans'
         }}
       >
         <main>{children}</main>
       </div>
-    </>
+    </Box>
   )
 }
 

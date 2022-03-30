@@ -48,23 +48,23 @@ function SectionLinks() {
   }
   
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column',}}>
-      <Button disableRipple onMouseMove={ handleMouseOverButton } onMouseLeave={() => { setRect(null) }} ref={boxRef} sx={ buttonSx }>
-        <Link activeClass="active" to="projects" spy={true} smooth={true} duration={1000} delay={400} onClick={() => { setClicked(true) }}>
-          <Cube mouseX={mouseX} mouseY={mouseY} rect={rect} clicked={clicked} setClicked={setClicked} text={"My Work"}/>
-        </Link>
-      </Button>
-      <Button disableRipple onMouseMove={ handleMouseOverButton2 } onMouseLeave={() => { setRect2(null) }} ref={boxRef2} sx={ buttonSx }>
-        <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} delay={400} onClick={() => { setClicked2(true) }}>
-          <Cube mouseX={mouseX} mouseY={mouseY} rect={rect2} clicked={clicked2} setClicked={setClicked2} text={"Skills"}/>
-        </Link>
-      </Button>
-      <Button disableRipple onMouseMove={ handleMouseOverButton3 } onMouseLeave={() => { setRect3(null) }} ref={boxRef3} sx={ buttonSx }>
-        <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000} delay={400} onClick={() => { setClicked3(true) }}>
-          <Cube mouseX={mouseX} mouseY={mouseY} rect={rect3} clicked={clicked3} setClicked={setClicked3} text={"Contact"}/>
-        </Link>
-      </Button>  
-    </Box>
+      <Box sx={{ display: 'flex', flexDirection: 'column', ml: '10rem'}}>
+        <Button disableRipple onMouseMove={ handleMouseOverButton } onMouseLeave={() => { setRect(null) }} ref={boxRef} sx={ buttonSx }>
+          <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500} delay={0} onClick={() => { setClicked(true) }}>
+            <Cube mouseX={mouseX} mouseY={mouseY} rect={rect} clicked={clicked} setClicked={setClicked} text={"My Work"}/>
+          </Link>
+        </Button>
+        <Button disableRipple onMouseMove={ handleMouseOverButton2 } onMouseLeave={() => { setRect2(null) }} ref={boxRef2} sx={ buttonSx }>
+          <Link activeClass="active" to="skills" spy={true} smooth={true} duration={500} delay={0} onClick={() => { setClicked2(true) }}>
+            <Cube mouseX={mouseX} mouseY={mouseY} rect={rect2} clicked={clicked2} setClicked={setClicked2} text={"Skills"}/>
+          </Link>
+        </Button>
+        <Button disableRipple onMouseMove={ handleMouseOverButton3 } onMouseLeave={() => { setRect3(null) }} ref={boxRef3} sx={ buttonSx }>
+          <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} delay={0} onClick={() => { setClicked3(true) }}>
+            <Cube mouseX={mouseX} mouseY={mouseY} rect={rect3} clicked={clicked3} setClicked={setClicked3} text={"Contact"}/>
+          </Link>
+        </Button>  
+      </Box>
   )
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 function NameSvg() {
   return (
-    <div class="nameSvgContainer">
+    <div class="nameSvgContainer" style={{ background: '#124559' }}>
       <svg class="nameSvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 50" xmlSpace="preserve">
       /* Name */
       <path class="computer" style={{fill: 'none', stroke: '#d9d9d9', strokeWidth: 1, strokeLinecap: 'round', strokeLinejoin: 'miter', strokeMiterlimit: 4}}

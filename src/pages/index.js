@@ -8,7 +8,7 @@ import Skills from "../components/h-skills/Skills"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Portfolio" />
+    <Seo title="Zach Ferguson" />
     <Intro />
     <Projects />
     <Skills />

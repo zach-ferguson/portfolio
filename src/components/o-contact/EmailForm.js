@@ -1,12 +1,14 @@
 import React, { useState, useRef } from 'react';
 import Button from '@mui/material/Button';
-import { TextField, Box } from '@mui/material';
+import { TextField, Box, useMediaQuery } from '@mui/material';
 import CircularProgress from '@mui/material/CircularProgress';
 import CustomSnackbar from './CustomSnackbar'
 import * as EmailValidator from 'email-validator';
-import emailjs from 'email-js';
+import emailjs from '@emailjs/browser';
 
 function EmailForm(props) {
+    const mobile = !useMediaQuery('(min-width:600px)');
+
     const [emailValue, setEmailValue] = useState();
     const [nameValue, setNameValue] = useState();
     const [emailError, setEmailError] = useState(false);
@@ -15,7 +17,7 @@ function EmailForm(props) {
     const [loadingSend, setLoadingSend] = useState(false);
     const [openSuccess, setOpenSuccess] = useState(false);
     const [openFailure, setOpenFailure] = useState(false);
-    
+
     const sendEmail = () => {
         if(!EmailValidator.validate(emailValue)){
         setEmailError(true);
@@ -25,7 +27,7 @@ function EmailForm(props) {
         }
         if(nameValue && EmailValidator.validate(emailValue)){
           setLoadingSend(true);
-          emailjs.sendForm('service_v5q10td', 'template_3tmg1uh', form.current, process.env.REACT_APP_EMAIL_JS_ID)
+          emailjs.sendForm('service_v5q10td', 'template_3tmg1uh', form.current, 'user_biQ4OVvhWyZ1XMhhHN01m')
             .then((result) => {
             console.log(result.text);
             if(result.status === 200){
@@ -50,7 +52,22 @@ function EmailForm(props) {
   return (
     <>
         <form ref={form}>
-            <Box sx={{ py: '20px', px: '30px', width: '420px', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', my: '3rem', mx: 'auto', background: '#d9d9d9', border: '1px solid black', borderRadius: '12px',   boxShadow: '8px 8px 4px 0px rgba(0,0,0,0,.69)' }}>
+            <Box sx={{ 
+                py: '20px', 
+                px: {xs: '10px', md: '30px'}, 
+                width: {xs: '95%', md: '420px'}, 
+                height: {xs: '500px', md: '100%'}, 
+                display: 'flex', 
+                flexDirection: 'column', 
+                alignItems: 'center', 
+                justifyContent: 'center', 
+                my: '3rem', 
+                mx: 'auto', 
+                background: '#EFF6E0', 
+                border: '1px solid black', 
+                borderRadius: '12px', 
+                boxShadow: '8px 8px 4px 0px rgba(53,53,53,53.69)'
+            }}>
                 <TextField
                     error={nameError}
                     id="user_name"
@@ -74,14 +91,14 @@ function EmailForm(props) {
                     variant='outlined'
                     value={emailValue}
                     onChange={(e) => {setEmailValue(e.target.value); setEmailError(false);}}
-                />
+                /> 
                 <TextField
                     multiline
-                    rows={10}
+                    rows={mobile? 8 : 10}
                     id="message-field"
                     type="text" 
                     name="message" 
-                    sx={{ marginTop: '25px', width: {xs: '300px', sm: '400px'}, height: {xs: '100%', sm: '300px'}, px: '10px'}}
+                    sx={{ marginTop: '25px', width: {xs: '300px', sm: '400px'}, height: {xs: '200px', md: '300px'}, px: '10px'}}
                     placeholder='Message'
                     variant='outlined'
                     />
@@ -92,22 +109,22 @@ function EmailForm(props) {
                         width: '300px',
                         height: '54px',
                         borderRadius: '25px',
-                        marginTop: {xs: '20px', sm: 'auto'},
+                        marginTop: '35px',
                         fontSize: '24px',
                         textTransform: 'none',
                         fontWeight: 600,
                         transition: '.3s ease-in-out',
-                        backgroundColor: '#3C6E71',
+                        backgroundColor: '#fece2f',
                         color: 'black',
                         border: '1px solid black',
                         '&:hover': {
                             width: '300px',
-                            backgroundColor: '#284B63',
+                            backgroundColor: '#AEC3B0',
                             transition: '.1s',
                         },
                         '&:active':{
                             width: '300px',
-                            backgroundColor: '#000000',
+                            backgroundColor: '#EFF6E0',
                         },
                     }}> 
                     {!loadingSend?

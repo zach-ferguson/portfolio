@@ -1022,10 +1022,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     "to-fast-properties" "^2.0.0"
 
-"@emailjs/browser@^3.4.0":
-  "integrity" "sha512-pTR9wEj0KLrJBVWFfB6IFEwmGIod/6cfN541Y0TVN2+9Bbn+R9a8gq6GeJZ6ggbYs36J3gCTXDyVKhtxjRsjtw=="
-  "resolved" "https://registry.npmjs.org/@emailjs/browser/-/browser-3.4.0.tgz"
-  "version" "3.4.0"
+"@emailjs/browser@^3.5.0":
+  "integrity" "sha512-VDpyaF2Xkt21/gRaV5TgZ8+CSsMy3+UTJo7K3/NL63gfBQIzrVQiK1U7Jw4PqpFDps9a1Gj7q8gfJ7thxUIRcw=="
+  "resolved" "https://registry.npmjs.org/@emailjs/browser/-/browser-3.5.0.tgz"
+  "version" "3.5.0"
 
 "@emotion/babel-plugin@^11.7.1":
   "integrity" "sha512-6mGSCWi9UzXut/ZAN6lGFu33wGR3SJisNl3c0tvlmb8XChH1b2SUvxvnOh7hvLpqyRdHHU9AiazV3Cwbk5SXKQ=="
@@ -1167,6 +1167,11 @@
   "integrity" "sha512-Wi4aN5AatkkJL8aqdJs6GZ7ikg86PgVZQcNtti+Yy0SziDzroekmxcnyPGgIqgAqnV5XepjZVG5vM0aReVjThQ=="
   "resolved" "https://registry.npmjs.org/@fontsource/josefin-slab/-/josefin-slab-4.5.5.tgz"
   "version" "4.5.5"
+
+"@fontsource/open-sans@^4.5.8":
+  "integrity" "sha512-3b94XDdRLqL7OlE7OjWg/4pgG825Juw8PLVEDm6h5pio0gMU89ICxfatGxHsBxMGfqad+wnvdmUweZWlELDFpQ=="
+  "resolved" "https://registry.npmjs.org/@fontsource/open-sans/-/open-sans-4.5.8.tgz"
+  "version" "4.5.8"
 
 "@fontsource/righteous@^4.5.1":
   "integrity" "sha512-v1iCzC+8D0pT+C/+sjZeUtHffnpSnvJudGOCHTs3LXxcyJVzgXKzBy4aQJcm67NUumJXZSvr478u21DKR0tk7w=="

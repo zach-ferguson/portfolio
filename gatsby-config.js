@@ -1,9 +1,13 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Zach Ferguson`,
-    description: `Frontend Developer | Javascript | React`,
+    description: `Frontend Developer | React | Javascript`,
     author: `Zach Ferguson`,
-    siteUrl: `https://www.zferg.com`,
+    siteUrl: `https://www.zach-ferguson.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,10 +24,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `zach-ferguson`,
-        short_name: `starter`,
+        name: `Zach-Ferguson`,
+        short_name: `ZF`,
         start_url: `/`,
-        background_color: `#284B63`,
+        background_color: `#124559`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,

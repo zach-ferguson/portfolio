@@ -2,13 +2,15 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import NameSvg from "./NameSvg"
 import SocialButtons from "./SocialButtons"
+import { Box } from "@mui/material"
 
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#284b63`,
-      borderBottom: '1px solid #353535'
+  <Box
+    sx={{
+      width:'100%',
+      background: `#124559`,
+      borderBottom: '1px solid #01161E'
     }}
   >
     <div
@@ -22,7 +24,7 @@ const Header = ({ siteTitle }) => (
       <NameSvg />
       <SocialButtons />
     </div>
-  </header>
+  </Box>
 )
 
 Header.propTypes = {

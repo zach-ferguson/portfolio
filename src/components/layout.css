@@ -9,9 +9,9 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #d9d9d9;
+  background-color: #eff6e0;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: "Open Sans";
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -609,7 +609,6 @@ pre tt:after {
   height: 100vh;
   top: 50%;
   left: 50%;
-  background: #284b63;
   margin: auto -100% auto 0;
   display: flex;
   align-items: center;
@@ -617,7 +616,7 @@ pre tt:after {
   animation-delay: 3.5s;
 }
 
-.nameSvg{
+.nameSvg{ 
   height: 100%;
   width: 100%;
   margin: auto;  
@@ -659,11 +658,13 @@ pre tt:after {
 
 .smoothlist {
   width: 50%;
-  height: 20vh;
   display: flex;
   padding: 0; 
-  margin: auto 0 auto auto;
   align-items: center;
+}
+
+.smoothlistChild{
+  margin: 0
 }
 
 .iconBox {
@@ -704,7 +705,6 @@ pre tt:after {
     width: 82px;
     height: 82px;
     transform: rotateZ(360deg);
-    margin-left: 2rem;
   }
 }
 
