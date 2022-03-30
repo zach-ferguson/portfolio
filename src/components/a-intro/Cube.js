@@ -71,7 +71,7 @@ function Cube(props) {
         duration: 2,
       })
     }
-  }, [props.rect])
+  }, [props.rect, props.mouseX, props.mouseY])
 
   const resetCube = () => {
     if(props.clicked === true){
@@ -113,7 +113,7 @@ function Cube(props) {
   },[props.clicked])
 
   return (
-    <div class="cube" ref={cubeRef} style={ cubeStyle } onMouseLeave={resetCube}>
+    <div class="cube" role='button' tabIndex={0} ref={cubeRef} style={ cubeStyle } onMouseLeave={resetCube}>
       <div class="face top" style={{ ...faceStyle, ...topFace }}></div>
       <div class="face bottom" style={{ ...faceStyle, ...bottomFace }}></div>
       <div class="face left" style={{ ...faceStyle, ...leftFace }}></div>

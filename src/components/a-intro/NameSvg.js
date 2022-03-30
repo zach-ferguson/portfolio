@@ -4,7 +4,6 @@ function NameSvg() {
   return (
     <div class="nameSvgContainer" style={{ background: '#124559' }}>
       <svg class="nameSvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 50" xmlSpace="preserve">
-      /* Name */
       <path class="computer" style={{fill: 'none', stroke: '#d9d9d9', strokeWidth: 1, strokeLinecap: 'round', strokeLinejoin: 'miter', strokeMiterlimit: 4}}
           d="M 38 2 L 38 11 C 38 12 38 13 39 13 L 46 13 L 46 15 L 44 15 L 52 15 L 50 15 L 50 13 L 46 13 L 57 13 C 58 13 58 12 58 12 L 58 2 C 58 2 58 1 57 1 L 39 1 C 38 1 38 2 38 2">
         </path>
