@@ -58,7 +58,7 @@ import pixelsThumbnail from '../../images/pixel-game-image.webp'
     link: `https://zferg.com/`, 
     aboutTextLines: [
       {text: `A fullstack crud app made with MongoDB, Express, React, Redux, and Node, hosted on an Amazon EC2 instance using Nginx.`},
-      {text: `Users can login, make pixel art, fork other users' art, collaborate, and save art to a gallery visible by all users.`},
+      {text: `Users can login, make pixel art, fork other users' art, collaborate, and save art to a gallery visible to all users.`},
     ],
     techStack: [
       {
