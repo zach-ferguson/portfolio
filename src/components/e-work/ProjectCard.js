@@ -38,7 +38,7 @@ const techIconStyles = {
 
 const overlayStyles = {
   width: '100%',
-  height: '100%',
+  height: '98.5%',
   position: 'absolute',  
   display: 'flex', 
   alignItems: 'center', 
@@ -108,7 +108,7 @@ function ProjectCard(props) {
             </Typography>
             {aboutText}
           </Grid>
-          <Grid item xs={12} md={3} sx={ cardTextStyles }>
+          <Grid item xs={12} sm={8} md={3} sx={ cardTextStyles }>
             <Typography sx={{ fontFamily: 'Righteous', fontWeight: 500, fontSize: '24px', mb: '1rem' }}>
               Tech Stack
             </Typography>
