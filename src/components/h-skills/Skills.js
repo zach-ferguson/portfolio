@@ -89,7 +89,7 @@ function Skills() {
         </Typography>
         <br/>
         <Typography sx={{ width: 'fit-content', fontFamily: 'Open Sans', fontSize: '20px', p: '10px', textAlign: {xs: 'center', md: 'left'} }}>
-          I am proficient in modern Javascript, CSS, and the React library, but I also have experience in backend work using Express.js and AWS. 
+          I am proficient in modern Javascript, CSS, and React.js, but I also have experience in backend work using Express.js and AWS. 
         </Typography>
       </Grid>
       <Grid item container xs={10} md={3.5} spacing={2} justifyContent={{xs: 'center', md: 'flex-start'}} sx={{ mt: '1rem' }}>
