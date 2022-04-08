@@ -26,6 +26,7 @@ function MobileSectionLinks() {
       <Grid item xs={button.gridSize}>
         <Link activeClass="active" to={button.linkTo} spy={true} smooth={true} duration={500} delay={0}>
           <Button sx={{ 
+            ml: '-.2rem',
             background: '#fece2f', 
             border: '1px solid #01161E',
             color: 'hsla(0, 0%, 0%, 0.8)', 
