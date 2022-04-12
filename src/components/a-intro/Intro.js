@@ -22,7 +22,7 @@ function Intro() {
         <Typography sx={{ fontFamily: 'Righteous', fontSize: {xs: '48px', md: '64px'}, fontWeight: 500 }}>
           Hi, I'm Zach
         </Typography>
-        <Typography sx={{fontFamily: 'Open Sans', fontSize: {xs: '18px', md: '24px'}, mt: {xs: '1rem', md: '2rem'}, textAlign: {xs: 'center', md: 'left'}, ml: {xs: '-3rem'} }}>
+        <Typography sx={{fontFamily: 'Open Sans', fontSize: {xs: '18px', md: '24px'}, mt: {xs: '1rem', md: '2rem'}, textAlign: {xs: 'center', md: 'left'}, ml: {xs: '-3rem', md: 0} }}>
           I build responsive apps and websites with a simplicity-first approach. 
         </Typography>
       </Grid>
